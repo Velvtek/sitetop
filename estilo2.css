@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;           
+  margin: 0;              
+}
+
+body {
+  background: url("no.jpg") no-repeat center/cover;
+  background-color: #ffffff94; 
+  background-blend-mode: darken;
+
+  display: flex;
+  flex-direction: column;  /* coloca um em cima do outro */
+  align-items: center;     /* centraliza horizontal */
+  justify-content: center; /* centraliza vertical */
+  gap: 50px;               /* espaço entre quadrado e gatitos */
+}
+
+.quadrado {
+  background-color: rgba(255, 255, 255, 0.9); /* leve transparência */
+  padding: 20px 40px;                         
+  border-radius: 10px;                        
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(204, 160, 215, 0.903);     /* sombra bonita */
+}
+
+.quadrado h1 {
+  color: #ffcf55;
+  font-family: 'Franklin Gothic Medium',cursive;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.gatitos {
+  display: flex;
+  justify-content: center;
+}
+
+.gatitos img {
+  max-width: 100%;    /* faz se adaptar em telas pequenas */
+  height: auto;       /* mantém proporção */
+  border-radius: 12px;
+}
+
+
+/* --- Animação do título --- */
+.quadrado h1 {
+  color: #f48fae;
+  font-family: 'Gill Sans', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+  opacity: 0;                   /* começa invisível */
+  animation: fadeIn 1.5s ease forwards; /* efeito aparecer */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Animação dos gatitos --- */
+.gatitos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+ 
+
+  opacity: 0;
+  transform: scale(0.8); /* começa menor */
+  animation: zoomIn 1.5s ease forwards;
+  animation-delay: 1s;   /* começa depois do título */
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Texto "Eu te amo" */
+.amor {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.amor h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 0 2px 6px rgba(246, 221, 255, 0.976);
+
+  opacity: 0;
+  animation: fadeText 1.5s ease forwards;
+  animation-delay: 3s; /* aparece só depois dos gatinhos */
+}
+
+/* animação exclusiva do texto */
+@keyframes fadeText {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+

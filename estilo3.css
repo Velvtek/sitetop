@@ -1,0 +1,5 @@
+body {
+  background: url("ta.jpg") repeat; /* repete a imagem em toda a tela */
+  background-size: 100px 100px;         /* define o tamanho da imagem repetida */
+  margin: 0;
+}

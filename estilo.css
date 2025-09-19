@@ -1,0 +1,68 @@
+body {
+      background-color: rgb(255, 226, 239);
+    }
+
+    h1 {
+      color: rgb(185, 93, 134);
+      font-family: 'Gill Sans', cursive;
+      font-size: xx-large;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .pros, .cont {
+      width: 45%;
+      padding: 15px;
+      border: 1px solid #b83467;
+      border-radius: 10px;
+      color: rgb(174, 61, 111);
+      background-color: rgba(255, 164, 196, 0.485);
+      font-family: 'Gill Sans',cursive;
+      font-size: smaller
+    }
+
+    .botoes {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center; 
+      gap: 20px; 
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #e55688bb, #ef8cbc);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(252, 132, 204, 0.751);
+    }
+
+    .botao:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 147, 183, 0.459);
+    }
+
+    .gato{
+      text-align: right;;
+    }
+
+    
+    .flores{
+      text-align: left;
+    }
+
+    .floga{
+       margin-top: -53px;
+      display: flex;
+      justify-content: center; /* centraliza */
+      gap: 800px; /* espaço entre os botões */
+    }
